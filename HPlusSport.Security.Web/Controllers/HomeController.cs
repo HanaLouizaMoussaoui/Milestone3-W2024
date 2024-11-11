@@ -6,6 +6,15 @@ namespace HPlusSport.Security.Web.Controllers;
 
 public class HomeController : Controller
 {
+
+    /*Course: 		Web Programming 3
+* Assessment: 	Milestone 3
+* Created by: 	Hana Louiza Moussaoui - 2275881
+* Date: 		11/11/2024
+* Class Name: 	HomeController.cs
+* Description: 	Handles the Index and Error views.
+* Time Task B):	2 hours for chapter 1 and 2.
+    */
     public IActionResult Index()
     {
         return View();
