@@ -14,7 +14,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = new PathString("/Account/Login");
     });
 
-builder.Services.AddSession(options => { options.Cookie.SameSite = SameSiteMode.None; options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest; });
+builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddDbContext<ShopContext>(options =>
@@ -22,7 +22,9 @@ builder.Services.AddDbContext<ShopContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
