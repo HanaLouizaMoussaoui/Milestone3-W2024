@@ -14,6 +14,7 @@ public class HomeController : Controller
 * Class Name: 	HomeController.cs
 * Description: 	Handles the Index and Error views.
 * Time Task B):	2 hours for chapter 1 and 2.
+* 2 hours for chapter 3 and 4.
     */
     public IActionResult Index()
     {
