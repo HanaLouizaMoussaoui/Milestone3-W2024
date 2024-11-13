@@ -17,7 +17,6 @@ public class HomeController : Controller
     */
     public IActionResult Index()
     {
-        var x = 1 / new Random().Next(0, 1);
         return View();
     }
 
